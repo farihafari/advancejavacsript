@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    class employee{
+        constructor(n,e,p,s){
+            this.name=n;
+            this.email=e;
+            this.phone=p;
+            this.salary=s;
+            // console.log("this is employee constructor")
+        }
+        workingslot(){
+            console.log("all employees have 9 to 5 working hours in a week")
+        }
+    }
+
+
+    class programmer extends employee{
+constructor(a,b,c,d,add){
+    super(a,b,c,d);
+    this.address=add;
+// console.log("this is programmmer constructor")
+
+}
+skills(s){
+console.log(this.name+" has skills "+s)
+}
+    }
+    let p1 = new programmer("ali","ali@gmail.com",12558,45000,"karachi")
+    let p2 = new programmer("alisha","alisha@gmail.com",545455,35000,"lahore")
+    console.log(p1);
+    console.log(p2)
+    p1.workingslot();
+    // console.log(p1.workingslot())
+    p1.skills("html css js")
+   </script> 
+</body>
+</html>

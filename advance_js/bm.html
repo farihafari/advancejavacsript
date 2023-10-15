@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="n">
+    <input type="submit" name="" id="b">
+    <p id="x"></p>
+    <script src="bm.js"></script>
+    <script type="module">
+import {a,b,user_detail} from './bm.js';
+
+document.querySelector("#b").addEventListener("click",()=>user_detail(a.value,b))
+    </script>
+</body>
+</html>

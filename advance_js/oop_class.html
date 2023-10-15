@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="x"></p>
+    <script>
+        let z="";
+        class employee{
+            constructor(n,e,a,s){
+                this.name=n;
+                this.email=e;
+                this.age=a;
+                this.salary=s;
+            }
+            designation(post){
+              z+=(this.name+" is hired as a "+post+" with "+this.salary+" his age is "+this.age+" here is him official email "+this.email);
+              document.querySelector("#x").innerHTML=z;
+            }
+        }
+        let em1= new employee("ali","ali@gmail.com",26,34000);
+        let em2 = new employee("sana ","sana@gmail.com",20,45000);
+        console.log(em1);
+        console.log(em1.designation("coordinator"))
+        console.log(em2.designation("faculty"))
+    </script>
+</body>
+</html>

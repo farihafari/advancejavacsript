@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let strng = "she name is fareeha and fareeha is a faculty member in aptech sfc";
+// let tst = /fareeha/g;
+//     document.write(strng.replace(tst,"areeba ")+"<br>");
+//     document.write(strng.search("fareeha")+
+//     "<br>");
+//     let x =/[^fareeha]/;
+    // document.write(strng.match())
+    let srch = /[^a-h]/g;
+document.write(strng.match(srch))
+document.write(strng.match(/h+/g))
+let pt =/fareeha/
+document.write(pt.test(strng))
+    </script>
+</body>
+</html>

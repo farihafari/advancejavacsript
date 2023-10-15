@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <table border="1">
+        <thead>
+            <tr>
+                <th>book name</th>
+                <th>book price</th>
+                <th>book author</th>
+                <th>book edition</th>
+            </tr>
+        </thead>
+        <tbody id="data">
+           
+        </tbody>
+    </table>
+    <script>
+        var x = document.querySelector("#data");
+        var y="";
+        class book{
+            constructor(name,price,author,edition){
+this.bname=name;
+this.bprice=price;
+this.bauthor=author;
+this.bedition=edition;
+            }
+            details(){
+y +=`
+<tr>
+    <td>`+this.bname+`</td>
+    <td>`+this.bprice+`</td>
+    <td>`+this.bauthor+`</td>
+    <td>`+this.bedition+`</td>
+    </tr>
+`
+x.innerHTML=y;
+            }
+          
+        }
+        let b1= new book("computer",3500,"Kent Beck","4th");
+        let b2= new book("physics",4500,"newton","14th");
+        let b3=new book("chemistry",2800,"alvi","12th")
+        console.log(b1)
+console.log(b2)
+console.log(b1.details())
+console.log(b2.details())
+b3.details()
+    </script>
+</body>
+</html>
